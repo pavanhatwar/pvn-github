@@ -6,9 +6,9 @@ input = raw_input("Please Type Anything  :")
 
 time.sleep (3)
 
-input = 'hello there'
 
-print input
+print 'hello,',input
+time.sleep (1)
 
 print 'how u doing ??'
 
