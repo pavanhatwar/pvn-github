@@ -10,4 +10,6 @@ input = 'hello there'
 
 print input
 
+print how u doing ??
+
 time.sleep (2)
