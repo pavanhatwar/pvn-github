@@ -1,0 +1,35 @@
+								
+							***A N S I B L E***
+
+
+pre-requisite:
+
+ python
+
+1st do this thing
+
+	apt-get update && apt-get upgrade -y
+	apt-get install ansible
+
+check whether ansible is install or not
+
+	ansible --version
+
+check config & host file
+
+	cd /etc/ansible
+
+go to /etc/ansible/hosts  and put one or more remote systems in it
+
+add host name or ip address on host file 
+
+	vi hosts  
+	eg. 192.0.2.50	OR
+	aserver.example.org  OR
+	bserver.example.org
+
+Now ping all your nodes
+
+	ansible all -m ping
+
+

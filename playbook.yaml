@@ -1,0 +1,14 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+    - name: Installs Nginx web server
+      apt: pkg=nginx state=installed update_cache=true
+      notify:
+        - start nginx
+
+    - name: Upload default index.html for host
+      copy: src=index.html dest=/var/www/html/ mode=0644
+
+    
+  
